@@ -1,0 +1,32 @@
+.layout-container {
+  position: relative;
+  min-height: 100vh; /* Ensures the layout takes full viewport height */
+  overflow: hidden; /* Prevents background from overflowing */
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensures the background stays behind the content */
+}
+
+.main-content {
+  position: relative;
+  z-index: 1; /* Ensures the content appears on top of the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Keeps content centered vertically */
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  /* display: flex; */
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+}

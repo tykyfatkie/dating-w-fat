@@ -1,0 +1,76 @@
+.thankyou-container {
+  text-align: center;
+  position: relative;
+  width: 80vw;
+}
+
+.thankyou-image {
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Animation for scaling effect */
+}
+
+.thankyou-image:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+.thankyou-text {
+  color: rgb(255, 106, 131);
+  font-family: "Cursive", sans-serif; /* Fancy font for a playful look */
+  text-shadow: 3px 3px 10px rgba(255, 119, 139, 0.8); /* Pink shadow effect */
+  margin-bottom: 20px;
+}
+
+.icon-container,
+.icon-container-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon-container .heart-icon,
+.icon-container .star-icon,
+.icon-container .ribbon-icon,
+.icon-container-bottom .heart-icon-bottom,
+.icon-container-bottom .star-icon-bottom,
+.icon-container-bottom .ribbon-icon-bottom {
+  color: pink;
+  font-size: 3rem;
+  margin: 0 15px;
+  animation: float 3s infinite ease-in-out; /* Floating animation */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.heart-icon:hover,
+.star-icon:hover,
+.ribbon-icon:hover,
+.heart-icon-bottom:hover,
+.star-icon-bottom:hover,
+.ribbon-icon-bottom:hover {
+  color: #ff69b4; /* Lighter pink when hovered */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-container-bottom {
+  position: relative; /* Important for absolute child positioning */
+  width: 100%;
+  height: 200px; /* Adjust height to control how much space the icons have to move */
+}
+
+.icon-random {
+  position: absolute;
+  transition: all 0.5s ease; /* Smooth transition if you want animations */
+  font-size: 2rem; /* Icon size, adjust as necessary */
+  color: pink;
+}
